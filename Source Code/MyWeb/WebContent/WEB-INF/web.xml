@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>MyWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>EchoServlet</servlet-name>
+    <servlet-class>com.hadi.jee.EchoServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <servlet-class>com.hadi.jee.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>QueryServlet</servlet-name>
+    <servlet-class>com.hadi.jee.QueryServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>MyServlet1</servlet-name>
+    <servlet-class>com.gopi.jee.MyServlet1</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>MyServlet2</servlet-name>
+    <servlet-class>com.gopi.jee.MyServlet2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>EchoServlet</servlet-name>
+    <url-pattern>/echo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>HelloWorldServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>QueryServlet</servlet-name>
+    <url-pattern>/query</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>MyServlet1</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>MyServlet2</servlet-name>
+    <url-pattern>/login11</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

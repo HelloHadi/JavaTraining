@@ -1,0 +1,164 @@
+<html>  
+<head>  
+<script type="text/javascript">  
+function msg(){  
+ alert("Hello JavaScript");  
+}  
+</script>  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form> 
+
+<script>  
+var x = 10;  
+var y = 20;  
+var z=x+y;  
+document.write(z);  
+</script>  
+
+<script>  
+var data=200;             //gloabal variable  
+function a(){  
+document.writeln(data);  
+}  
+function b(){  
+document.writeln(data);  
+}  
+a();                              //calling JavaScript function  
+b();  
+</script>  
+
+<script>  
+var a=9;  
+if(a>10){  
+document.write("value of a is greater than 10");  
+}else{
+document.write("value of a is lower than 10");
+}  
+</script>  
+
+<script type="text/javascript">
+         <!--
+            var age = 15;
+         
+            if( age > 18 ){
+               document.write("<b>Qualifies for driving</b>");
+            }
+            
+            else{
+               document.write("<b>Does not qualify for driving</b>");
+            }
+         //-->
+      </script>
+
+<script type="text/javascript">
+         <!--
+            var grade='A';
+            document.write("Entering switch block<br />");
+            switch (grade)
+            {
+               case 'A': document.write("Good job<br />");
+               break;
+	       case 'B': document.write("Pretty good<br />");
+               break;
+               case 'C': document.write("Passed<br />");
+               break;
+               case 'D': document.write("Not so good<br />");
+               break;
+               case 'F': document.write("Failed<br />");
+               break;
+              default:  document.write("Unknown grade<br />")
+            }
+            document.write("Exiting switch block");
+         //-->
+      </script>
+
+<script type="text/javascript">
+         <!--
+            var count = 0;
+            document.write("Starting Loop ");
+            while (count < 10){
+               document.write("Current Count : " + count + "<br />");
+               count++;
+            }
+            document.write("Loop stopped!");
+         //-->
+      </script>
+
+<script type="text/javascript">
+         <!--
+            var count = 0;
+            
+            document.write("Starting Loop" + "<br />");
+            do{
+               document.write("Current Count : " + count + "<br />");
+               count++;
+            }
+            
+            while (count < 5);
+            document.write ("Loop stopped!");
+         //-->
+      </script>
+
+<script type="text/javascript">
+         <!--
+            var count;
+            document.write("Starting Loop" + "<br />");
+         
+            for(count = 0; count < 10; count++){
+               document.write("Current Count : " + count );
+               document.write("<br />");
+            }
+         
+            document.write("Loop stopped!");
+         //-->
+      </script>
+
+<script type="text/javascript">
+         <!--
+            var aProperty;
+            document.write("Navigator Object Properties<br /> ");
+         
+            for (aProperty in navigator) { /*navigator from the browser */
+               document.write(aProperty);
+               document.write("<br />");
+            }
+            document.write ("Exiting from the loop!");
+         //-->
+      </script>
+
+<script type="text/javascript">
+         <!--
+            var x = 1;
+            document.write("Entering the loop<br /> ");
+            while (x < 10)
+            {
+               x = x + 1;
+               
+               if (x == 5){
+                  continue; // skip rest of the loop body
+               }
+               document.write( x + "<br />");
+            }
+		document.write("Exiting the loop!<br /> ");
+         //-->
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>  
+</html> 
